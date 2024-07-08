@@ -1,31 +1,29 @@
-# ETH-AVAX-INTER-1st-Errorhandle
+# OddEvenChecker Smart Contract
 
-
-
-## Overview
-
-The `Error` contract is a basic smart contract written in Solidity that demonstrates the usage of `require`, `revert`, and `assert` statements for condition validation. It includes three functions:
-
-1. `testRequire`: Validates whether the provided age is greater than or equal to 18 using the `require` statement.
-
-2. `testRevert`: Checks if the age is greater than or equal to 18; if not, it reverts the transaction with an error message.
-
-3. `testAssert`: Uses the `assert` statement to ensure that the age is always greater than or equal to 18.
+This Solidity smart contract provides functions to check whether a given number is odd or even. It also demonstrates the usage of `require`, `revert`, and assertion (`assert`) statements for condition validation within smart contracts.
 
 ## Functions
 
-### `testRequire(uint _age)`
+### `isEven(uint256 number)`
 
-This function validates the age parameter using the `require` statement. If the age is greater than or equal to 18, it returns the message "You are eligible."
+Checks if the provided number is even.
 
-### `testRevert(uint _age)`
+- **Parameters:**
+  - `number`: Unsigned integer to be checked for evenness.
 
-The `testRevert` function checks the age condition and reverts the transaction with an error message if the age is less than 18. If the age is 18 or greater, it returns the message "You are eligible."
+- **Returns:**
+  - `bool`: `true` if the number is even, `false` otherwise.
 
-### `testAssert()`
+### `isOdd(uint256 number)`
 
-The `testAssert` function uses the `assert` statement to ensure that the age is always greater than or equal to 18. If the assertion holds true, it returns the message "You are eligible."
+Checks if the provided number is odd.
 
-## Usage
+- **Parameters:**
+  - `number`: Unsigned integer to be checked for oddness.
 
-To interact with this contract, you can deploy it to a compatible Ethereum environment using tools like Remix or Truffle. After deployment, you can call the functions with appropriate parameters to test the different conditions.
+- **Returns:**
+  - `bool`: `true` if the number is odd, `false` otherwise.
+
+### `checkEvenWithRevert(uint256 number)`
+
+Demonstr
