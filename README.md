@@ -26,4 +26,14 @@ Checks if the provided number is odd.
 
 ### `checkEvenWithRevert(uint256 number)`
 
-Demonstr
+Demonstrates the use of `revert()` to handle conditions directly within the function.
+
+- **Parameters:**
+  - `number`: Unsigned integer to be checked for evenness.
+
+- **Reverts:**
+  - If `number` is not even, the function reverts the transaction with an error message.
+
+## Usage
+
+To interact with this contract, deploy it to an Ethereum-compatible environment such as Remix or Truffle. After deployment, call the functions to verify the odd/even status of different numbers.
